@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+	<display-name>Financial Management</display-name>
+	<!-- <listener>
+		<listener-class>com.bns.util.bnsServletContextListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.bns.util.bnsHttpSessionListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.bns.util.bnsServletRequestListener</listener-class>
+	</listener> -->
+	
+	<!-- <filter>
+        <filter-name>mySecurityFilter</filter-name>
+        <filter-class>com.mgl.servlet.InitServlet</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>mySecurityFilter</filter-name>
+        <url-pattern>/*index/*</url-pattern>
+    </filter-mapping> -->
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+  
+	<servlet>
+		<display-name>InitServlet</display-name>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>com.mgl.servlet.InitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/InitServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

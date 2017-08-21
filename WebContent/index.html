@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link href="resources/css/style.css" rel="stylesheet">
+<link href="resources/css/styleFFMM.css" rel="stylesheet">
+<link href="resources/css/jquery-ui.css" rel="stylesheet">
+<link href="resources/css/menu.css" rel="stylesheet"> -->
+<meta charset="utf-8">
+<title>Coming soon develop something Here! </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+</head>
+<body id="ng-app" ng-app="LoginApp" ng-controller="LoginController" ng-init="init()">
+<h1>This is login v1.0</h1>
+
+<label>Usuario:</label><input type="text" ng-model="datosPagina.user"/>
+<label>Contraseña:</label><input type="password" ng-model="datosPagina.password"/>
+<!-- <a href="InitServlet">Enviar</a> -->
+<button ng-click="validarCredenciales()">Enviar</button>
+
+<script src="resources/js/lib/angular.js"></script>
+<script src="resources/js/util/utiljsApp.js"></script>
+<script src="resources/js/lib/jquery-1.9.1.js"></script>
+<script src="resources/js/lib/jquery-ui/jquery-ui.js"></script>
+<!-- <script src="resources/js/util/gmd-ffmm.js"></script> -->
+
+<script src="resources/js/app/login/login-app.js"></script>
+<script src="resources/js/app/login/login-controller.js"></script>
+<script src="resources/js/app/login/login-services.js"></script>
+</body>
+</html>
